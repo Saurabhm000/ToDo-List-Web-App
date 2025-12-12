@@ -1,0 +1,192 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* MAIN LAYOUT */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #799EFF;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container1 {
+    width: 100vw;
+    max-width: 800px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #799EFF;
+}
+
+/* TITLE */
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* INPUT SECTION */
+.box1 {
+    padding: 1rem;
+    background-color: #FEFFC4;
+    border-radius: 12px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.inputtext {
+    flex: 1;
+    height: 55px;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid #799EFF;
+    background-color: #FEFFC4;
+}
+
+.submitbutton {
+    height: 55px;
+    width: 90px;
+    background-color: #FFBC4C;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.submitbutton:active {
+    background-color:#799EFF;
+}
+
+/* LIST SECTION */
+.box2 {
+    min-height: 50vh;
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #FFDE63;
+    border-radius: 12px;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    height: auto;
+    min-height: 55px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deletebutton {
+    height: 45px;
+    width: 55px;
+    background-color: #FFBC4C;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.deletebutton:active {
+    background-color:red;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* ----------------------------- */
+/* 📱 MOBILE RESPONSIVE BREAKPOINTS */
+/* ----------------------------- */
+
+/* Small Phones (up to 480px) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .box1 {
+        flex-direction: column;
+    }
+
+    .inputtext {
+        width: 100%;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .submitbutton {
+        width: 100%;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.8rem;
+    }
+
+    .deletebutton {
+        width: 100%;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
+
+/* Tablets (481px–768px) */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .inputtext {
+        font-size: 1.3rem;
+    }
+
+    .submitbutton {
+        font-size: 1.1rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop (768px and up) */
+@media (min-width: 769px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .inputtext {
+        font-size: 1.5rem;
+    }
+
+    .submitbutton {
+        font-size: 1.3rem;
+    }
+
+    li {
+        font-size: 1.4rem;
+    }
+}
